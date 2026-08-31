@@ -93,7 +93,7 @@ export function App() {
           <div className="resource-types"><span><Route/>Major roadways</span><span><Trees/>Public recreation</span><span><Mountain/>Lake shoreline</span></div>
           <a href="https://gis.trpa.org/permitreview/" target="_blank" rel="noreferrer">Open TRPA’s Permit Review Map <ArrowRight size={16}/></a>
         </aside>
-        <div className="photo-credit">Lake Tahoe · Photo by Peter Hulce / Unsplash</div>
+        <div className="photo-credit">Lake Tahoe project view</div>
       </section>
 
       <section className="intro section">
