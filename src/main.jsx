@@ -78,7 +78,11 @@ export function App() {
 
     <main>
       <section className="hero">
-        <img className="hero-photo" src="/splash.jpg" alt="Lake Tahoe shoreline and Sierra Nevada mountains" width="1641" height="1080" fetchPriority="high" />
+        <picture className="hero-picture">
+          <source media="(max-width: 600px)" srcSet="/splash-480.webp" type="image/webp" />
+          <source srcSet="/splash-1080.webp" type="image/webp" />
+          <img className="hero-photo" src="/splash.jpg" alt="Lake Tahoe shoreline and Sierra Nevada mountains" width="1641" height="1080" loading="eager" fetchPriority="high" />
+        </picture>
         <div className="hero-overlay" />
         <div className="hero-content">
           <p className="eyebrow"><span /> TRPA scenic analysis support</p>
