@@ -126,7 +126,7 @@ export function App() {
 
       <section className="faq section"><p className="section-label">Common questions</p><div className="faq-layout"><h2>Scenic review,<br/>made understandable.</h2><div>{faqs.map(([q,a],i)=><article className={`faq-item ${openFaq===i?'open':''}`} key={q}><button onClick={()=>setOpenFaq(openFaq===i?-1:i)} aria-expanded={openFaq===i}><span>{q}</span><ChevronDown/></button>{openFaq===i&&<p>{a}</p>}</article>)}</div></div></section>
 
-      <section className="cta" id="contact"><div className="cta-heading"><p className="section-label light">Your project, clearly presented</p><h2>Tell us about<br/><em>your project.</em></h2><p>Share a few details and we’ll respond with a sensible next step. Prefer email? Write to <a href={`mailto:${email}`}>{email}</a>.</p></div><ContactForm /></section>
+      <section className="cta" id="contact"><div className="cta-heading"><p className="section-label light">Your project, clearly presented</p><h2>Tell us about<br/><em>your project.</em></h2><p>Share a few details and we’ll respond with a sensible next step. Prefer email? Write to <a href={`mailto:${email}`}>{email}</a></p></div><ContactForm /></section>
     </main>
 
     <footer><Logo/><p>Independent scenic-analysis consulting for the Lake Tahoe Basin.</p><a href={`mailto:${email}`}>{email}</a><div className="fine-print">Tahoe Scenic Analysis is an independent consultancy and is not affiliated with or endorsed by the Tahoe Regional Planning Agency (TRPA). Requirements and agency determinations are project-specific. © {new Date().getFullYear()} Tahoe Scenic Analysis.</div></footer>
