@@ -6,16 +6,17 @@ import './styles.css'
 const email = 'hello@tahoescenicanalysis.com'
 
 const steps = [
-  { n: '01', icon: Map, title: 'Confirm applicability', copy: 'Locate the parcel, identify mapped scenic resources, and determine whether the project is within or visible from a regulated viewing area.' },
+  { n: '01', icon: Map, title: 'Confirm applicability', copy: 'Locate the parcel, identify the applicable scenic resource area or scenic unit, and determine whether the project is visible from a regulated public viewing area.' },
   { n: '02', icon: Eye, title: 'Document the view', copy: 'Establish representative public viewpoints, document the lakefront elevation, and record existing conditions.' },
-  { n: '03', icon: Compass, title: 'Evaluate contrast', copy: 'Compare the proposal with the landscape—form, line, color, texture, scale, screening, and visibility all matter.' },
-  { n: '04', icon: FileCheck2, title: 'Prepare the analysis', copy: 'Compile the findings into a clear scenic analysis with the required worksheets and practical design responses.' },
+  { n: '03', icon: Compass, title: 'Evaluate contrast', copy: 'Evaluate visual magnitude, visible area, and contrast in form, line, color, texture, scale, and screening.' },
+  { n: '04', icon: FileCheck2, title: 'Prepare the assessment', copy: 'Compile the findings into a clear scenic assessment with the required worksheets and practical design responses.' },
 ]
 
 const faqs = [
-  ['Does every Tahoe project need a scenic analysis?', 'No. TRPA explains that scenic standards apply to projects located within or visible from identified scenic resource areas. These include the Lake Tahoe shoreline, major roadway corridors, and public recreation areas and bicycle trails. A parcel-specific screening is the right first step.'],
+  ['Does my Tahoe project require scenic review?', 'Not every project does. Scenic review may apply when development is located within or visible from an identified scenic resource area, including the Lake Tahoe shoreline, major roadway corridors, public recreation areas, and bicycle trails. A parcel-specific visibility screening is the right first step.'],
   ['What can affect the level of review?', 'Location, visibility, project type, the applicable scenic unit, its current attainment status, and the rules in TRPA Code Chapter 66 and any relevant area or corridor plan can all affect the path. Shoreland and shorezone work may have additional scenic assessment requirements.'],
-  ['What does a visual assessment study?', 'A typical assessment documents the existing setting and considers whether the proposal changes or contrasts with scenic resources. Relevant characteristics can include scale, form, line, color, texture, siting, vegetation, topography, screening, and views from public travel routes or recreation areas.'],
+  ['What is a scenic assessment or visual assessment?', 'A scenic or visual assessment documents the existing setting and evaluates how a proposal may contrast with a scenic resource. Relevant characteristics can include visible mass, scale, form, line, color, texture, siting, vegetation, topography, screening, and views from public travel routes or recreation areas.'],
+  ['What are visible area and visual magnitude?', 'TRPA scenic materials use visual magnitude and visible-area measurements to evaluate how strongly proposed development appears from a scenic viewpoint. Lakefront review may also call for lake-facing elevation drawings, an elevation outline, and documentation of the visible area.'],
   ['Are you the Tahoe Regional Planning Agency?', 'No. Tahoe Scenic Analysis is an independent consulting resource and is not affiliated with, endorsed by, or a substitute for TRPA. TRPA and the applicable local jurisdiction make all permitting and compliance decisions.'],
 ]
 
@@ -87,12 +88,12 @@ export function App() {
         <div className="hero-content">
           <p className="eyebrow"><span /> TRPA scenic analysis support</p>
           <h1>Need help with your<br/><em>scenic analysis?</em></h1>
-          <p className="hero-lead">We help Lake Tahoe property owners and project teams understand scenic requirements, document public views, evaluate visual impacts, and prepare a clear package for agency review.</p>
+          <p className="hero-lead">We help Lake Tahoe property owners and project teams with TRPA scenic review, scenic assessments, visual assessments, public-view documentation, and clear submittals for agency review.</p>
           <div className="hero-actions"><a className="button" href="#contact">Get help with your project <ArrowRight size={18}/></a><a className="text-link" href="#process">See how it works <span>↓</span></a></div>
         </div>
         <aside className="hero-card">
           <p className="card-kicker">Start here</p>
-          <h2>Is your project visible from a scenic resource area?</h2>
+          <h2>Could your project require scenic review?</h2>
           <div className="resource-types"><span><Route/>Major roadways</span><span><Trees/>Public recreation</span><span><Mountain/>Lake shoreline</span></div>
           <a href="https://gis.trpa.org/permitreview/" target="_blank" rel="noreferrer">Open TRPA’s Permit Review Map <ArrowRight size={16}/></a>
         </aside>
@@ -101,7 +102,7 @@ export function App() {
 
       <section className="intro section">
         <p className="section-label">The essential question</p>
-        <div className="intro-grid"><h2>Good scenic analysis begins <em>with the right information.</em></h2><div><p className="large-copy">TRPA’s Scenic Protection Program is designed to keep development compatible with Tahoe’s natural setting and preserve important public views.</p><p>The work begins by identifying the relevant scenic unit, public viewpoints, governing standards, and attainment status. That early clarity helps keep the analysis focused on the information the project actually needs.</p></div></div>
+        <div className="intro-grid"><h2>Good scenic review begins <em>with the right information.</em></h2><div><p className="large-copy">TRPA’s Scenic Protection Program is designed to keep development compatible with Tahoe’s natural setting and preserve important public views.</p><p>The work begins by identifying the scenic resource area, roadway or shoreline unit, public viewpoints, scenic threshold requirements, and attainment status. That early clarity helps determine whether the project needs a scenic assessment, visual assessment, or a more focused set of review materials.</p></div></div>
         <div className="stats"><div><strong>3</strong><span>primary scenic resource types</span></div><div><strong>4</strong><span>core stages in a clear analysis</span></div><div><strong>1</strong><span>coordinated, review-ready package</span></div></div>
       </section>
 
@@ -113,7 +114,7 @@ export function App() {
       <section id="services" className="services section">
         <div className="services-visual"><div className="viewfinder"><span/><span/><span/><span/><div><small>Representative viewpoint</small><b>Existing condition → Proposed condition</b></div></div></div>
         <div className="services-copy"><p className="section-label">How we can help</p><h2>A focused scope for a clearer review.</h2><p>Engagements can begin with a quick applicability review or cover a complete scenic analysis package, depending on the project and agency path.</p>
-          <ul>{['Parcel and scenic-unit research','Applicable standard and attainment review','Viewpoint planning and field documentation','Lakefront elevation documentation','Contrast and visual-impact evaluation','Mitigation and design-response guidance','Worksheet preparation and analysis support'].map(x=><li key={x}><Check size={17}/>{x}</li>)}</ul>
+          <ul>{['Parcel and scenic-resource-area research','Scenic unit, threshold, and attainment review','Viewpoint photos and field documentation','Lake-facing elevation and outline documentation','Visible-area and visual-impact evaluation','Color, material, and screening review','Scenic assessment worksheet support'].map(x=><li key={x}><Check size={17}/>{x}</li>)}</ul>
         </div>
       </section>
 
