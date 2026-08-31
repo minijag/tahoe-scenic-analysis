@@ -69,7 +69,6 @@ function ContactForm() {
 }
 
 export function App() {
-  const [openFaq, setOpenFaq] = useState(0)
   return <div id="top">
     <header>
       <Logo />
@@ -79,7 +78,7 @@ export function App() {
 
     <main>
       <section className="hero">
-        <div className="hero-photo" role="img" aria-label="Lake Tahoe shoreline and Sierra Nevada mountains" />
+        <img className="hero-photo" src="/splash.jpg" alt="Lake Tahoe shoreline and Sierra Nevada mountains" width="1641" height="1080" fetchPriority="high" />
         <div className="hero-overlay" />
         <div className="hero-content">
           <p className="eyebrow"><span /> TRPA scenic analysis support</p>
@@ -124,7 +123,7 @@ export function App() {
         </div>
       </section>
 
-      <section className="faq section"><p className="section-label">Common questions</p><div className="faq-layout"><h2>Scenic review,<br/>made understandable.</h2><div>{faqs.map(([q,a],i)=><article className={`faq-item ${openFaq===i?'open':''}`} key={q}><button onClick={()=>setOpenFaq(openFaq===i?-1:i)} aria-expanded={openFaq===i}><span>{q}</span><ChevronDown/></button>{openFaq===i&&<p>{a}</p>}</article>)}</div></div></section>
+      <section className="faq section"><p className="section-label">Common questions</p><div className="faq-layout"><h2>Scenic review,<br/>made understandable.</h2><div>{faqs.map(([q,a],i)=><details className="faq-item" key={q} open={i===0}><summary><span>{q}</span><ChevronDown/></summary><p>{a}</p></details>)}</div></div></section>
 
       <section className="cta" id="contact"><div className="cta-heading"><p className="section-label light">Your project, clearly presented</p><h2>Tell us about<br/><em>your project.</em></h2><p>Share a few details and we’ll respond with a sensible next step. Prefer email? Write to <a href={`mailto:${email}`}>{email}</a></p></div><ContactForm /></section>
     </main>
