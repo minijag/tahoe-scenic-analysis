@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tahoescenicanalysis.com/sitemap.xml
-
+Sitemap: https://www.tahoescenicanalysis.com/sitemap.xml
