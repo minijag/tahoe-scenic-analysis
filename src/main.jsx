@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { ArrowRight, Check, ChevronDown, Compass, Eye, FileCheck2, LoaderCircle, Map, Mountain, Route, Send, Trees } from 'lucide-react'
 import './styles.css'
 
-const email = 'hello@tahoescenicanalysis.com'
+const email = 'hello@TahoeScenicAssessment.com'
 
 const steps = [
   { n: '01', icon: Map, title: 'Confirm applicability', copy: 'Locate the parcel, identify the applicable scenic resource area or scenic unit, and determine whether the project is visible from a regulated public viewing area.' },
