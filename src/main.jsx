@@ -17,11 +17,11 @@ const faqs = [
   ['What can affect the level of review?', 'Location, visibility, project type, the applicable scenic unit, its current attainment status, and the rules in TRPA Code Chapter 66 and any relevant area or corridor plan can all affect the path. Shoreland and shorezone work may have additional scenic assessment requirements.'],
   ['What is a scenic assessment or visual assessment?', 'A scenic or visual assessment documents the existing setting and evaluates how a proposal may contrast with a scenic resource. Relevant characteristics can include visible mass, scale, form, line, color, texture, siting, vegetation, topography, screening, and views from public travel routes or recreation areas.'],
   ['What are visible area and visual magnitude?', 'TRPA scenic materials use visual magnitude and visible-area measurements to evaluate how strongly proposed development appears from a scenic viewpoint. Lakefront review may also call for lake-facing elevation drawings, an elevation outline, and documentation of the visible area.'],
-  ['Are you the Tahoe Regional Planning Agency?', 'No. Tahoe Scenic Analysis is an independent consulting resource and is not affiliated with, endorsed by, or a substitute for TRPA. TRPA and the applicable local jurisdiction make all permitting and compliance decisions.'],
+  ['Are you the Tahoe Regional Planning Agency?', 'No. Tahoe Scenic Assessment is an independent consulting resource and is not affiliated with, endorsed by, or a substitute for TRPA. TRPA and the applicable local jurisdiction make all permitting and compliance decisions.'],
 ]
 
 function Logo() {
-  return <a className="logo" href="#top" aria-label="Tahoe Scenic Analysis home"><span className="logo-mark"><Mountain size={24}/></span><span>Tahoe <b>Scenic Analysis</b></span></a>
+  return <a className="logo" href="#top" aria-label="Tahoe Scenic Assessment home"><span className="logo-mark"><Mountain size={24}/></span><span>Tahoe <b>Scenic Assessment</b></span></a>
 }
 
 function ContactForm() {
@@ -48,8 +48,8 @@ function ContactForm() {
 
   return <form className="contact-form" onSubmit={submitForm}>
     <input type="hidden" name="access_key" value="65dfe96b-ac2f-4661-950c-3d4239d6c697" />
-    <input type="hidden" name="subject" value="New scenic analysis project inquiry" />
-    <input type="hidden" name="from_name" value="Tahoe Scenic Analysis Website" />
+    <input type="hidden" name="subject" value="New scenic assessment project inquiry" />
+    <input type="hidden" name="from_name" value="Tahoe Scenic Assessment Website" />
     <input type="checkbox" name="botcheck" className="botcheck" tabIndex="-1" autoComplete="off" aria-hidden="true" />
     <div className="field-row">
       <label><span>Name *</span><input type="text" name="name" autoComplete="name" required /></label>
@@ -86,8 +86,8 @@ export function App() {
         </picture>
         <div className="hero-overlay" />
         <div className="hero-content">
-          <p className="eyebrow"><span /> TRPA scenic analysis support</p>
-          <h1>Need help with your<br/><em>scenic analysis?</em></h1>
+          <p className="eyebrow"><span /> TRPA scenic assessment support</p>
+          <h1>Need help with your<br/><em>scenic assessment?</em></h1>
           <p className="hero-lead">We help Lake Tahoe property owners and project teams with TRPA scenic review, scenic assessments, visual assessments, public-view documentation, and clear submittals for agency review.</p>
           <div className="hero-actions"><a className="button" href="#contact">Get help with your project <ArrowRight size={18}/></a><a className="text-link" href="#process">See how it works <span>↓</span></a></div>
         </div>
@@ -103,7 +103,7 @@ export function App() {
       <section className="intro section">
         <p className="section-label">The essential question</p>
         <div className="intro-grid"><h2>Good scenic review begins <em>with the right information.</em></h2><div><p className="large-copy">TRPA’s Scenic Protection Program is designed to keep development compatible with Tahoe’s natural setting and preserve important public views.</p><p>The work begins by identifying the scenic resource area, roadway or shoreline unit, public viewpoints, scenic threshold requirements, and attainment status. That early clarity helps determine whether the project needs a scenic assessment, visual assessment, or a more focused set of review materials.</p></div></div>
-        <div className="stats"><div><strong>3</strong><span>primary scenic resource types</span></div><div><strong>4</strong><span>core stages in a clear analysis</span></div><div><strong>1</strong><span>coordinated, review-ready package</span></div></div>
+        <div className="stats"><div><strong>3</strong><span>primary scenic resource types</span></div><div><strong>4</strong><span>core stages in a clear assessment</span></div><div><strong>1</strong><span>coordinated, review-ready package</span></div></div>
       </section>
 
       <section id="process" className="process section">
@@ -113,7 +113,7 @@ export function App() {
 
       <section id="services" className="services section">
         <div className="services-visual"><div className="viewfinder"><span/><span/><span/><span/><div><small>Representative viewpoint</small><b>Existing condition → Proposed condition</b></div></div></div>
-        <div className="services-copy"><p className="section-label">How we can help</p><h2>A focused scope for a clearer review.</h2><p>Engagements can begin with a quick applicability review or cover a complete scenic analysis package, depending on the project and agency path.</p>
+        <div className="services-copy"><p className="section-label">How we can help</p><h2>A focused scope for a clearer review.</h2><p>Engagements can begin with a quick applicability review or cover a complete scenic assessment package, depending on the project and agency path.</p>
           <ul>{['Parcel and scenic-resource-area research','Scenic unit, threshold, and attainment review','Viewpoint photos and field documentation','Lake-facing elevation and outline documentation','Visible-area and visual-impact evaluation','Color, material, and screening review','Scenic assessment worksheet support'].map(x=><li key={x}><Check size={17}/>{x}</li>)}</ul>
         </div>
       </section>
@@ -133,7 +133,7 @@ export function App() {
       <section className="cta" id="contact"><div className="cta-heading"><p className="section-label light">Your project, clearly presented</p><h2>Tell us about<br/><em>your project.</em></h2><p>Share a few details and we’ll respond with a sensible next step. Prefer email? Write to <a href={`mailto:${email}`}>{email}</a></p></div><ContactForm /></section>
     </main>
 
-    <footer><Logo/><p>Independent scenic-analysis consulting for the Lake Tahoe Basin.</p><a href={`mailto:${email}`}>{email}</a><div className="fine-print">Tahoe Scenic Analysis is an independent consultancy and is not affiliated with or endorsed by the Tahoe Regional Planning Agency (TRPA). Requirements and agency determinations are project-specific. © {new Date().getFullYear()} Tahoe Scenic Analysis.</div></footer>
+    <footer><Logo/><p>Independent scenic-assessment consulting for the Lake Tahoe Basin.</p><a href={`mailto:${email}`}>{email}</a><div className="fine-print">Tahoe Scenic Assessment is an independent consultancy and is not affiliated with or endorsed by the Tahoe Regional Planning Agency (TRPA). Requirements and agency determinations are project-specific. © {new Date().getFullYear()} Tahoe Scenic Assessment.</div></footer>
   </div>
 }
 

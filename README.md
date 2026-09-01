@@ -1,6 +1,6 @@
-# Tahoe Scenic Analysis
+# Tahoe Scenic Assessment
 
-Static React website for independent scenic-analysis consulting in the Lake Tahoe Basin.
+Static React website for independent scenic-assessment consulting in the Lake Tahoe Basin.
 
 ## Development
 
